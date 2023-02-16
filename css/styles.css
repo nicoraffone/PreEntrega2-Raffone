@@ -24,9 +24,6 @@ body{
     background-color: #292929f3;
     display: flex;
     justify-content: space-between;
-    border-bottom: solid black;
-    border-width: 15px;
-    padding: 5px;
 }
 
 .sushi{
@@ -206,6 +203,7 @@ body{
     margin-bottom: 80px;
     border: solid rgb(255, 255, 255);
     border-width: 4px;
+    padding: 10px;
 }
 
 .navmenu{
@@ -222,12 +220,12 @@ body{
 
 .navmenu a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     transition: all 0.4s ease;
 }
 
 .navmenu a:hover{
-    color: white;
+    color: #D48468;
 }
 
 .logo2{
@@ -301,19 +299,22 @@ body{
     text-align: center;
     width: 300px;
     height: 200px;
+    color: white;
 }
 
 .formdatos input{
     text-align: center;
-    margin: 10px;
+    margin: 1px;
     font-size: 16px;
     height: 45px;
     width: 300px;
 }
 
 .msj{
-    margin: 10px;
-    font-size: 20px;
+    margin: 20px;
+    margin-bottom: 40px;
+    margin-right: 56px;
+    font-size: 18px;
     text-align: center;
     width: 300px;
     height: 200px;
@@ -358,4 +359,395 @@ body{
     margin-left: 35%;
     width: 32.6%;
     height: 470px;
+}
+
+/* RESPONSIVE SMARTPHONE 480px */
+
+@media only screen and (max-width:480px) {
+    .sushi{
+        width: 480px;
+        height: 100px;
+        padding: 2px;
+        border: solid #D48468; 
+    }
+
+    .topimage{
+        background-color: #292929f3;
+        display: flex;
+        justify-content: space-between;
+        width: 480px;
+    }
+    
+    .navbarpages{
+        background-color: #D48468;
+        width: 480px;
+    }
+    
+    .navbarpages a{
+        color: white;
+        font-size: 10px;
+        margin-left: -40px;
+    }
+
+    .logo2{
+        display: flex;
+        justify-content: space-around;
+        width: 480px;
+    }
+    
+    .logo2 img{
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        margin-left: 0;
+        margin-top: 40px;
+        border: solid white;
+    }
+
+    .titulo{
+        background-color: rgba(211, 211, 211, 0.521);
+        margin-top: 60px;
+        margin-bottom: 30px;
+        border: solid rgb(255, 255, 255);
+        border-width: 2px;
+        font-size: 20px;
+    }
+
+    .textmenu{
+        background-color: rgba(0, 0, 0, 0.452);
+        font-size: 12px;
+        margin: 50px 20px;
+        line-height: 40px;
+        text-decoration-line: underline;
+        color: rgb(211, 211, 211);
+        width: 480px;
+    }
+
+    .mainmenu{
+        display: inline;
+        width: 480px;
+    }
+
+    .navmenu{
+        width: 480px;
+        background-color: #686868ee;
+        display: flex;
+        flex-direction: inline-block;
+        margin: 40px 30% 35px -45px;
+        list-style: none;
+        justify-content: space-around;
+        font-size: 13px;
+        text-decoration-line: underline;
+    }
+
+    .textmenu h2{
+        font-size: 20px;
+    }
+
+    .final{
+        background-color: #D48468;
+        margin-top: 30%;
+        padding: 10px;
+        font-size: 20px;
+        display: flex;
+    }
+    
+    .final2{
+        width: 480px;
+        background-color: #D48468;
+        margin-top: 2%;
+        padding: 10px;
+        font-size: 12px;
+        display: flex;
+    }
+
+    .direcc{
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .direcc ul{
+        margin-left: 0px;
+        width: 150px;
+    }
+    
+    .redes{
+        display: flex;
+        margin-left: 1%;
+        height: 70px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;   
+    }
+    
+    .redes img{
+        height: 24px;
+        width: 24px;
+    }
+
+    .separador{
+        width: 480px;
+        background-color: rgba(211, 211, 211, 0.363);
+        color: rgba(211, 211, 211, 0);
+    }
+}
+
+/* RESPONSIVE TABLET 770px */
+
+@media only screen and (max-width:770px) {
+    .sushi{
+        width: 770px;
+        height: 100px;
+        padding: 2px;
+        border: solid #D48468; 
+    }
+
+    .topimage{
+        background-color: #292929f3;
+        display: flex;
+        justify-content: space-between;
+        width: 770px;
+    }
+    
+    .navbarpages{
+        background-color: #D48468;
+        width: 770px;
+    }
+    
+    .navbarpages a{
+        color: white;
+        font-size: 18px;
+        margin-left: -20px;
+    }
+
+    .logo2{
+        display: flex;
+        justify-content: space-around;
+        width: 770px;
+    }
+    
+    .logo2 img{
+        border-radius: 50%;
+        height: 130px;
+        width: 130px;
+        margin-left: 200px;
+        margin-top: 40px;
+        border: solid white;
+    }
+
+    .titulo{
+        background-color: rgba(211, 211, 211, 0.521);
+        margin-top: 60px;
+        border: solid rgb(255, 255, 255);
+        border-width: 2px;
+        font-size: 25px;
+    }
+
+    .textmenu{
+        background-color: rgba(0, 0, 0, 0.452);
+        font-size: 15px;
+        margin: 50px 20px;
+        line-height: 40px;
+        text-decoration-line: underline;
+        color: rgb(211, 211, 211);
+        width: 770px;
+    }
+
+    .mainmenu{
+        display: inline;
+        width: 770px;
+    }
+
+    .navmenu{
+        width: 770px;
+        background-color: #686868ee;
+        display: flex;
+        flex-direction: inline-block;
+        margin: 40px 30% 35px -45px;
+        list-style: none;
+        justify-content: space-around;
+        font-size: 20px;
+        text-decoration-line: underline;
+    }
+
+    .textmenu h2{
+        font-size: 20px;
+    }
+
+    .final{
+        background-color: #D48468;
+        margin-top: 30%;
+        padding: 10px;
+        font-size: 20px;
+        display: flex;
+    }
+    
+    .final2{
+        width: 770px;
+        background-color: #D48468;
+        margin-top: 2%;
+        padding: 10px;
+        font-size: 12px;
+        display: flex;
+    }
+
+    .direcc{
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .direcc ul{
+        margin-left: 0px;
+        width: 150px;
+    }
+    
+    .redes{
+        display: flex;
+        margin-left: 1%;
+        height: 70px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;   
+    }
+    
+    .redes img{
+        height: 34px;
+        width: 34px;
+    }
+
+    .separador{
+        width: 770px;
+        background-color: rgba(211, 211, 211, 0.363);
+        color: rgba(211, 211, 211, 0);
+    }
+}
+
+/* RESPONSIVE  1440px */
+
+@media only screen and (max-width:1440px) {
+    .sushi{
+        width: 1440px;
+        height: 100px;
+        padding: 2px;
+        border: solid #D48468; 
+    }
+
+    .topimage{
+        background-color: #292929f3;
+        display: flex;
+        justify-content: space-between;
+        width: 1440px;
+    }
+    
+    .navbarpages{
+        background-color: #D48468;
+        width: 1440px;
+    }
+    
+    .navbarpages a{
+        color: white;
+        font-size: 25px;
+        margin-left: -20px;
+    }
+
+    .logo2{
+        display: flex;
+        justify-content: space-around;
+        width: 1440px;
+    }
+    
+    .logo2 img{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-left: 200px;
+        margin-top: 40px;
+        border: solid white;
+    }
+
+    .titulo{
+        background-color: rgba(211, 211, 211, 0.521);
+        margin-top: 100px;
+        border: solid rgb(255, 255, 255);
+        border-width: 2px;
+        font-size: 28px;
+    }
+
+    .textmenu{
+        background-color: rgba(0, 0, 0, 0.452);
+        font-size: 20px;
+        margin: 50px 30px;
+        line-height: 40px;
+        text-decoration-line: underline;
+        color: rgb(211, 211, 211);
+        width: 1350px;
+    }
+
+    .mainmenu{
+        display: inline;
+        width: 1440px;
+    }
+
+    .navmenu{
+        width: 1440px;
+        background-color: #686868ee;
+        display: flex;
+        flex-direction: inline-block;
+        margin: 40px 30% 35px -45px;
+        list-style: none;
+        justify-content: space-around;
+        font-size: 25px;
+        text-decoration-line: underline;
+    }
+
+    .textmenu h2{
+        font-size: 25px;
+    }
+
+    .final{
+        background-color: #D48468;
+        margin-top: 30%;
+        padding: 10px;
+        font-size: 20px;
+        display: flex;
+    }
+    
+    .final2{
+        width: 1440px;
+        background-color: #D48468;
+        margin-top: 2%;
+        padding: 10px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    .direcc{
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .direcc ul{
+        margin-left: 0px;
+        width: 150px;
+        font-size: 15px;
+    }
+    
+    .redes{
+        display: flex;
+        margin-left: 1%;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    
+    .redes img{
+        height: 38px;
+        width: 38px;
+    }
+
+    .separador{
+        width: 1440px;
+        background-color: rgba(211, 211, 211, 0.363);
+        color: rgba(211, 211, 211, 0);
+    }
 }
