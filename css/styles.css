@@ -259,6 +259,7 @@ body{
     line-height: 40px;
     text-decoration-line: underline;
     color: rgb(211, 211, 211);
+    grid-area: textmenu2;
 }
 
 .drinks{
@@ -324,6 +325,7 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
+    grid-area: datos;
 }
 
 .textcontacto{
@@ -332,6 +334,7 @@ body{
     width: 700px;
     background-color: rgba(0, 0, 0, 0.452);
     margin: 30px;
+    grid-area: textcontacto;
 }
 
 .textcontacto ul{
@@ -340,10 +343,19 @@ body{
     margin: 60px;
 }
 
-.datostext{
-    display: flex;
-    justify-content: space-evenly;
+/** GRID ULTIMO HTML (Contacto) */
+
+.sectiongrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.4fr 0.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "textmenu2 textmenu2 textmenu2 textmenu2"
+    "datos datos textcontacto textcontacto"; 
 }
+
+/** - - - - */ 
 
 .datostext button{
     font-size: 18px;
@@ -353,8 +365,6 @@ body{
 }
 
 .map{
-    border: solid #D48468;
-    border-width: 10px;
     margin-top: 100px;
     margin-left: 35%;
     width: 32.6%;
@@ -377,7 +387,137 @@ body{
         justify-content: space-between;
         width: 480px;
     }
+
+    /* index only */
+
+    .mainindex{
+        display: flex;
+        width: 480px;
+    }
     
+    .logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50px;
+    }
+    
+    .logo img{
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        border: solid white;
+    }
+    
+    .logo h1{
+        color: white;
+        background-color: black;
+        border: solid white;
+        margin-top: 15px;
+        font-size: 12px;
+        width: 110px;
+    }
+    
+    .botones{
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        margin-top: 80px;
+    }
+    
+    .menu{
+        display: flex;
+        border-bottom: double black;
+        border-width: 15px;
+        margin-right: 130px;
+    }
+    
+    .botonesimg{
+        height: 170px;
+        width: 170px;
+        border-radius: 50%;
+        opacity: 0.7;
+        transition: all 1s ease;
+    }
+    
+    .botonesimg:hover {
+        opacity: 1;
+    }
+    
+    .menu ul{
+        padding-top: 40px;
+        padding-left: 60px;
+        text-align: left;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.815);
+    }
+    
+    .catering{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 130px;
+        border-bottom: double black;
+        border-width: 15px;
+    }
+    
+    .catering ul{
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.815);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 30px;
+    }
+    
+    
+    
+    .equipo{
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        margin-top: 120px;
+        background-color: gray;
+    }
+    
+    .equipoimg{
+        display: flex;
+        margin-top: 70px;
+        margin-right: 200px;
+    }
+    
+    .equipoimg img{
+        height: 140px;
+        width: 140px;
+        margin-right: 20px;
+    }
+    
+    .equipoimg ul{
+        font-size: 18px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.815);
+        padding-top: 40px;
+        padding-left: 60px;
+        text-align: left;
+        text-decoration: underline;
+    }
+    
+    .visita{
+        height: 350px;
+        width: 350px;
+        margin-top: 100px;
+        margin-left: 25%;
+    }
+    
+    .final{
+        background-color: #D48468;
+        margin-top: 30%;
+        padding: 25px;
+        font-size: 20px;
+        display: flex;
+    }
+    
+    /* - - - - - */
+
     .navbarpages{
         background-color: #D48468;
         width: 480px;
@@ -492,12 +632,12 @@ body{
     }
 }
 
-/* RESPONSIVE TABLET 770px */
+/* RESPONSIVE TABLET 768px */
 
-@media only screen and (max-width:770px) {
+@media only screen and (max-width:768px) {
     .sushi{
-        width: 770px;
-        height: 100px;
+        width: 768px;
+        height: 200px;
         padding: 2px;
         border: solid #D48468; 
     }
@@ -506,12 +646,12 @@ body{
         background-color: #292929f3;
         display: flex;
         justify-content: space-between;
-        width: 770px;
+        width: 768px;
     }
     
     .navbarpages{
         background-color: #D48468;
-        width: 770px;
+        width: 768px;
     }
     
     .navbarpages a{
@@ -520,10 +660,138 @@ body{
         margin-left: -20px;
     }
 
+        /* index only */
+
+        .mainindex{
+            display: flex;
+            width: 768px;
+        }
+        
+        .logo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50px;
+        }
+        
+        .logo img{
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+            border: solid white;
+        }
+        
+        .logo h1{
+            color: white;
+            background-color: black;
+            border: solid white;
+            margin-top: 15px;
+            font-size: 12px;
+            width: 110px;
+        }
+        
+        .botones{
+            display: flex;
+            flex-direction: column;
+            margin-top: 80px;
+        }
+        
+        .menu{
+            display: flex;
+            border-bottom: double black;
+            border-width: 15px;
+            margin-right: 100px;
+        }
+        
+        .botonesimg{
+            height: 140px;
+            width: 140px;
+            border-radius: 50%;
+            opacity: 0.7;
+            transition: all 1s ease;
+        }
+        
+        .botonesimg:hover {
+            opacity: 1;
+        }
+        
+        .menu ul{
+            padding-top: 40px;
+            padding-left: 60px;
+            text-align: left;
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.815);
+        }
+        
+        .catering{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 100px;
+            border-bottom: double black;
+            border-width: 15px;
+        }
+        
+        .catering ul{
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.815);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 30px;
+        }
+        
+        
+        
+        .equipo{
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            margin-top: 120px;
+            background-color: gray;
+        }
+        
+        .equipoimg{
+            display: flex;
+            margin-top: 70px;
+            margin-right: 200px;
+        }
+        
+        .equipoimg img{
+            height: 140px;
+            width: 140px;
+            margin-right: 20px;
+        }
+        
+        .equipoimg ul{
+            font-size: 18px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.815);
+            padding-top: 40px;
+            padding-left: 60px;
+            text-align: left;
+            text-decoration: underline;
+        }
+        
+        .visita{
+            height: 350px;
+            width: 350px;
+            margin-top: 100px;
+            margin-left: 25%;
+        }
+        
+        .final{
+            background-color: #D48468;
+            display: flex;
+            width: 780px;
+        }
+        
+        /* - - - - - */
+    
+
     .logo2{
         display: flex;
         justify-content: space-around;
-        width: 770px;
+        width: 768px;
     }
     
     .logo2 img{
@@ -550,16 +818,16 @@ body{
         line-height: 40px;
         text-decoration-line: underline;
         color: rgb(211, 211, 211);
-        width: 770px;
+        width: 768px;
     }
 
     .mainmenu{
         display: inline;
-        width: 770px;
+        width: 768px;
     }
 
     .navmenu{
-        width: 770px;
+        width: 768px;
         background-color: #686868ee;
         display: flex;
         flex-direction: inline-block;
@@ -574,16 +842,9 @@ body{
         font-size: 20px;
     }
 
-    .final{
-        background-color: #D48468;
-        margin-top: 30%;
-        padding: 10px;
-        font-size: 20px;
-        display: flex;
-    }
     
     .final2{
-        width: 770px;
+        width: 768px;
         background-color: #D48468;
         margin-top: 2%;
         padding: 10px;
@@ -592,19 +853,17 @@ body{
     }
 
     .direcc{
-        margin-left: 0px;
         text-align: center;
     }
     
     .direcc ul{
-        margin-left: 0px;
-        width: 150px;
+        width: 200px;
     }
     
     .redes{
         display: flex;
         margin-left: 1%;
-        height: 70px;
+        height: 50px;
         width: 100%;
         justify-content: space-around;
         align-items: center;   
@@ -622,13 +881,13 @@ body{
     }
 }
 
-/* RESPONSIVE  1440px */
+/* RESPONSIVE Desktop 1440px */
 
 @media only screen and (max-width:1440px) {
     .sushi{
-        width: 1440px;
+        width: 25%;
         height: 100px;
-        padding: 2px;
+        padding: 1px;
         border: solid #D48468; 
     }
 
@@ -649,6 +908,138 @@ body{
         font-size: 25px;
         margin-left: -20px;
     }
+
+    /* index only */
+
+    .mainindex{
+        display: flex;
+        width: 1440px;
+    }
+    
+    .logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 770px;
+    }
+    
+    .logo img{
+        border-radius: 50%;
+        height: 140px;
+        width: 140px;
+        border: solid white;
+    }
+    
+    .logo h1{
+        color: white;
+        background-color: black;
+        border: solid white;
+        margin-top: 20px;
+        font-size: 15px;
+        width: 133px;
+    }
+    
+    .botones{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin-top: 80px;
+    }
+    
+    .menu{
+        display: flex;
+        border-bottom: double black;
+        border-width: 15px;
+        margin-right: 130px;
+        width: 600px;
+    }
+    
+    .botonesimg{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        opacity: 0.7;
+        transition: all 1s ease;
+    }
+    
+    .botonesimg:hover {
+        opacity: 1;
+    }
+    
+    .menu ul{
+        margin-left: 100px;
+        text-align: left;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.815);
+    }
+    
+    .catering{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+        border-bottom: double black;
+        border-width: 15px;
+        width: 600px;
+    }
+    
+    .catering ul{
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.815);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 200px;
+    }
+    
+    
+    
+    .equipo{
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        margin-top: 100px;
+        background-color: gray;
+    }
+    
+    .equipoimg{
+        display: flex;
+        margin-top: 40px;
+        margin-right: 10px;
+    }
+    
+    .equipoimg img{
+        height: 100px;
+        width: 100px;
+        margin-right: 15px;
+    }
+    
+    .equipoimg ul{
+        font-size: 13px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.815);
+        padding-top: 20px;
+        padding-left: 20px;
+        text-align: left;
+        text-decoration: underline;
+    }
+    
+    .visita{
+        height: 240px;
+        width: 240px;
+        margin-top: 130px;
+        margin-left: 20%;
+    }
+    
+    .final{
+        background-color: #D48468;
+        margin-top: 30%;
+        padding: 25px;
+        display: flex;
+        width: 1440px;
+    }
+    
+    /* - - - - - */
+
 
     .logo2{
         display: flex;
@@ -706,9 +1097,7 @@ body{
 
     .final{
         background-color: #D48468;
-        margin-top: 30%;
-        padding: 10px;
-        font-size: 20px;
+        margin-top: 450px;
         display: flex;
     }
     
@@ -730,7 +1119,7 @@ body{
     .direcc ul{
         margin-left: 0px;
         width: 150px;
-        font-size: 15px;
+        font-size: 10px;
     }
     
     .redes{
