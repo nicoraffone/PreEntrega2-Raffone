@@ -371,11 +371,11 @@ body{
     height: 470px;
 }
 
-/* RESPONSIVE SMARTPHONE 480px */
+/* RESPONSIVE SMARTPHONE 350px */
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:350px) {
     .sushi{
-        width: 480px;
+        width: 350px;
         height: 100px;
         padding: 2px;
         border: solid #D48468; 
@@ -385,14 +385,14 @@ body{
         background-color: #292929f3;
         display: flex;
         justify-content: space-between;
-        width: 480px;
+        width: 350px;
     }
 
     /* index only */
 
     .mainindex{
         display: flex;
-        width: 480px;
+        width: 350px;
     }
     
     .logo{
@@ -520,7 +520,7 @@ body{
 
     .navbarpages{
         background-color: #D48468;
-        width: 480px;
+        width: 350px;
     }
     
     .navbarpages a{
@@ -532,7 +532,7 @@ body{
     .logo2{
         display: flex;
         justify-content: space-around;
-        width: 480px;
+        width: 350px;
     }
     
     .logo2 img{
@@ -547,7 +547,7 @@ body{
     .titulo{
         background-color: rgba(211, 211, 211, 0.521);
         margin-top: 60px;
-        margin-bottom: 30px;
+        margin-bottom: 80px;
         border: solid rgb(255, 255, 255);
         border-width: 2px;
         font-size: 20px;
@@ -560,23 +560,23 @@ body{
         line-height: 40px;
         text-decoration-line: underline;
         color: rgb(211, 211, 211);
-        width: 480px;
+        width: 350px;
     }
 
     .mainmenu{
         display: inline;
-        width: 480px;
+        width: 350px;
     }
 
     .navmenu{
-        width: 480px;
+        width: 350px;
         background-color: #686868ee;
         display: flex;
         flex-direction: inline-block;
         margin: 40px 30% 35px -45px;
         list-style: none;
         justify-content: space-around;
-        font-size: 13px;
+        font-size: 12px;
         text-decoration-line: underline;
     }
 
@@ -593,7 +593,7 @@ body{
     }
     
     .final2{
-        width: 480px;
+        width: 350px;
         background-color: #D48468;
         margin-top: 2%;
         padding: 10px;
@@ -626,7 +626,7 @@ body{
     }
 
     .separador{
-        width: 480px;
+        width: 350px;
         background-color: rgba(211, 211, 211, 0.363);
         color: rgba(211, 211, 211, 0);
     }
